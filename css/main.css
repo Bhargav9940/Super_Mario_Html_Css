@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Roboto+Slab&display=swap");
+:root {
+  --primary-color: #0670f1;
+}
+
+body {
+  background-color: #F2F2F2;
+  margin: 0;
+  font-family: "roboto slab";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+  font-size: 1.3em;
+}
+.navbar .logo .mariotext {
+  color: var(--primary-color);
+}
+.navbar nav {
+  display: none;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .menu-open {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.navbar .menu-open:hover {
+  width: 37px;
+  height: 37px;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.section1 {
+  text-align: center;
+}
+
+.leftup .mainline {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  letter-spacing: 0.3em;
+}
+.leftup h1 {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 0.3em;
+}
+.leftup .playnow {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.3em 0.8em;
+  font-size: 1.2em;
+  border-radius: 10em;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 0.1em;
+}
+.leftup .playnow:hover {
+  background: red;
+  font-weight: bolder;
+}
+.leftup .watchnow {
+  display: block;
+  margin-top: 1em;
+}
+.leftup .watchnow img {
+  margin-right: 0.5em;
+}
+.leftup .watchonyt {
+  width: 1.7em;
+}
+
+.mariocenter {
+  width: 75%;
+  margin-top: 2em;
+}
+
+.section2 {
+  background: #20272E;
+  color: white;
+}
+
+ul.facts {
+  margin: 0;
+  padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+ul.facts li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+ul.facts li:before {
+  content: "";
+  left: -1.8em;
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  background-image: url("../images/coin.png");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+ul.facts li:hover {
+  font-weight: bold;
+}
+
+.section2 img {
+  display: none;
+}
+
+.section3 {
+  background: var(--primary-color);
+  color: white;
+}
+.section3 li {
+  background: #3a93ff;
+  text-align: center;
+  padding: 2em 1em;
+  width: 90%;
+  margin: 0 auto 5em auto;
+  border-radius: 1.5em;
+  font-size: 1.2em;
+}
+.section3 li img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #14144b;
+  border-radius: 10%;
+  margin-top: -4.5em;
+}
+.section3 li img:hover {
+  width: 190px;
+  height: 190px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  border: 1px solid grey;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  margin-bottom: 4em;
+  border-radius: 5em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5em 1em;
+  width: unset;
+}
+
+.sec4right {
+  text-align: center;
+}
+
+.mariobros {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+
+.section5 {
+  background-color: #20272E;
+  color: #d4d4d4;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.section5 h3 {
+  color: #d4d4d4;
+}
+.section5 .notice {
+  color: #e63333;
+}
+.section5 .please {
+  color: #2a64e0;
+}
+.section5 li {
+  display: inline-block;
+  background-color: none;
+  padding: 0.7em 0.8em;
+  margin: 1em 0.8em;
+  border-radius: 1em;
+}
+.section5 li:hover {
+  border: 2px solid white;
+}
+.section5 li img {
+  border-radius: 0.5em;
+}
+.section5 li .nintendo {
+  width: 3em;
+  height: 3em;
+}
+.section5 li .nintendomario {
+  width: 3em;
+  height: 3em;
+}
+.section5 li .nintendoinstagram {
+  width: 3em;
+  height: 3em;
+}
+.section5 li .nintendotwitter {
+  width: 3em;
+  height: 3em;
+}
+.section5 .footer {
+  margin-top: 1em;
+  color: grey;
+  font-style: italic;
+}
+
+nav.menu-event {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 40%;
+  right: 0;
+  top: 0;
+  background: #20272e;
+  height: 80vh;
+  padding: 1.5em;
+}
+nav ul.first-nav {
+  margin-top: 3em;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.2em;
+  text-align: left;
+  background-color: red;
+  border-radius: 0.5em;
+  margin: 0.8em 0;
+}
+nav li a:hover {
+  font-weight: bold;
+  background-color: white;
+  color: #f8001a;
+}
+nav ul .getsub a {
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bold;
+  border: 3px solid var(--primary-color);
+  border-radius: 2em;
+  text-align: center;
+}
+nav ul .getsub a span {
+  color: red;
+}
+nav ul .getsub a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: white;
+}
+nav .menu-close {
+  width: 1.8em;
+  float: right;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0.3em;
+  padding: 0.08em;
+}
+nav .menu-close:hover {
+  width: 2em;
+  border: 1px solid white;
+}
+nav .navlogo {
+  width: 5em;
+}
+nav .navlogo:hover {
+  width: 6em;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-open, .menu-close, .navlogolink {
+    display: none;
+  }
+  .navbar .container {
+    display: flex;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    background: none;
+    justify-content: space-between;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1.1em;
+    padding: 0.1em 1em;
+    margin: 0em 0.05em;
+    background-color: transparent;
+  }
+  .navbar nav a:hover {
+    background-color: transparent;
+  }
+  .navbar nav ul.first-nav {
+    margin: 0;
+    margin-left: 2em;
+  }
+  .navbar nav li.getsub a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 3em;
+    font-weight: bold;
+    margin-top: -0.1em;
+  }
+  .navbar nav li.getsub a .sub {
+    color: red;
+  }
+  .navbar nav li.getsub a:hover {
+    color: white;
+    background-color: var(--primary-color);
+  }
+  .section3 ul {
+    display: flex;
+  }
+  .section3 ul li {
+    width: 26%;
+    margin-right: auto;
+    padding: 1em;
+  }
+  .section3 ul li img {
+    width: 130px;
+    height: 130px;
+  }
+  .section3 {
+    padding-bottom: 3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: auto;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 0.5em;
+  }
+  .section1 .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .section1 .container .leftup {
+    margin: 3em 3em 0 6em;
+  }
+  .section1 .container .leftup h1 {
+    font-size: 3em;
+    width: 85%;
+  }
+  .mariocenter {
+    width: 40%;
+    margin-right: 6em;
+    margin-top: -7em;
+  }
+  .enjoy {
+    display: flex;
+    font-size: 1.1em;
+  }
+  .playnow {
+    margin-right: 1em;
+  }
+  ul.facts {
+    display: block;
+    margin-left: 5em;
+  }
+  ul.facts li {
+    font-size: 1.4em;
+  }
+  .section2 {
+    position: relative;
+  }
+  .section2 img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: 5em;
+    margin-right: 7em;
+  }
+  .section3 ul {
+    display: flex;
+  }
+  .section3 ul li {
+    width: 270px;
+    margin-right: auto;
+  }
+  .section3 ul li img {
+    width: 180px;
+    height: 180px;
+  }
+  .section4 {
+    position: relative;
+  }
+  .section4 .container {
+    display: flex;
+  }
+  .sec4right {
+    position: absolute;
+    right: 0;
+    top: 2;
+    width: 50%;
+    height: 70%;
+  }
+  .sec4left {
+    width: 50%;
+    margin-left: 2em;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section2:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -6em;
+  }
+  .section2:after {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 152px;
+    background: url("../images/coinchottu.png") no-repeat;
+    left: 4em;
+    top: -2em;
+  }
+}/*# sourceMappingURL=main.css.map */

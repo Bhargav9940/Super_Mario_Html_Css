@@ -1,0 +1,599 @@
+// @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Roboto+Slab&display=swap');
+
+
+:root {
+    --primary-color : #0670f1;//#0909db;
+}
+
+body {
+    background-color : #F2F2F2;
+    margin : 0;
+    font-family : 'roboto slab'; //'poppins'
+}
+
+.navbar {
+    background: white;
+    padding : 1em;
+
+    .logo {
+        text-decoration : none;
+        font-weight : bold;
+        color : red;
+        font-size : 1.3em;
+
+        .mariotext {
+            color : var(--primary-color);
+        }
+    }
+
+    nav {
+        display : none;
+    }
+
+    .container {
+        display : flex;
+        place-content : space-between;
+    }
+
+    .menu-open {
+        width : 35px;
+        height : 35px;
+        cursor : pointer;
+
+        &:hover {
+            width : 37px;
+            height : 37px;
+        }
+    }
+}
+
+a {
+    color : #444444;
+}
+
+ul {
+    list-style-type : none;
+    margin : 0;
+    padding : 0;
+}
+
+section {
+    padding : 5em 2em;
+}
+
+.section1 {
+    text-align : center;
+}
+
+.leftup {
+    
+    .mainline {
+        text-transform : uppercase;
+        font-weight : bold;
+        color : grey;
+        letter-spacing : .3em;
+    }
+
+    h1 {
+        font-size : 2.5em;
+        line-height : 1.2em;
+        margin-top: .3em;
+    }
+
+    .playnow {
+        background : var(--primary-color);
+        color : white;
+        text-decoration : none;
+        padding : .3em .8em;
+        font-size : 1.2em;
+        border-radius : 10em;
+        font-weight : bold;
+        display : inline-block;
+        letter-spacing : .1em;
+
+        &:hover {
+            // font-size : 1.3em;
+            background : red;
+            font-weight: bolder;
+        }
+    }
+
+    .watchnow {
+        display : block;
+        margin-top : 1em;
+        
+        img {
+            margin-right : .5em;
+        }
+    }
+    .watchonyt {
+        width : 1.7em;
+    }
+    
+}
+
+.mariocenter {
+    width : 75%;
+    margin-top : 2em;
+}
+
+.section2 {
+    background : #20272E; //#3a555a;
+    color : white;
+}
+
+ul.facts {
+    margin : 0;
+    padding-left : .1em;
+    display : grid;
+    grid-template-columns : repeat(auto-fit, minmax(19rem, 1fr));
+
+    li {
+        font-size : 1.1em;
+        margin-bottom: 1em;
+        margin-left : 2em;
+        position : relative;
+
+        &:before {
+            content:'';
+            left : -1.8em;
+            position : absolute;
+            width : 20px;
+            height : 24px;
+            background-image : url('../images/coin.png');
+            background-size : contain;
+            margin-right : .5em;
+        }
+
+        &:hover {
+            font-weight:bold;
+        }
+    }
+}
+
+.section2 img {
+    display : none;
+}
+
+.section3 {
+    background : var(--primary-color);
+    color : white;
+
+    // .purchaselist {
+    //     background : red;
+    // }
+
+    li {
+        background : #3a93ff;//#3131e2;
+        text-align : center;
+        padding : 2em 1em;
+        width : 90%;
+        margin : 0 auto 5em auto;
+        border-radius : 1.5em;
+        font-size : 1.2em;
+
+        img {
+            width : 200px;
+            height : 200px;
+            border : 2px solid #14144b;
+            border-radius : 10%;
+            margin-top : -4.5em;
+
+            &:hover {
+                width : 190px;
+                height : 190px;
+            }
+        }
+        // .purchase2 {
+        //     // height : 15em;
+        //     // width : 15em;
+        // }
+    }
+}
+
+h2 {
+    font-size : 1.5em;
+}
+
+label {
+    display : block;
+    font-size : 1.2em;
+    margin-bottom : .3em;
+}
+
+input, textarea {
+    width : 100%;
+    padding : .7em;
+    margin-bottom : 1em;
+    border-radius : .5em;
+    border : 1px solid grey;
+    box-sizing : border-box;
+}
+
+input[type="submit"] {
+    background-color : var(--primary-color); //#ff2c2c;
+    color : white;
+    font-weight : bold;
+    font-size : 1.2em;
+    border : none;
+    margin-bottom : 4em;
+    border-radius : 5em;
+    cursor: pointer;
+    display : inline-block;
+    padding : .5em 1em;
+    width : unset;
+}
+
+.sec4right {
+    // width : 100%;
+    // height : auto;
+    text-align : center;
+}
+
+.mariobros {
+    width: 80%;
+    height : 80%;  //450px
+    text-align : center;
+}
+
+
+.section5 {
+    background-color : #20272E;//#de8f59;//var(--primary-color);
+    color : #d4d4d4;
+    letter-spacing: .1em;
+    text-align : center;
+
+    h3 {
+        color : #d4d4d4;
+    }
+    .notice {
+        color : #e63333;
+    }
+    .please {
+        color:#2a64e0;     //#3131e2;
+    }
+
+    li {
+        display : inline-block;
+        background-color: none;
+        padding : .7em .8em;
+        margin : 1em .8em;
+        border-radius : 1em;
+
+        &:hover {
+            border : 2px solid white;
+            // background: 
+        }
+
+        img {
+            border-radius: .5em;
+        }
+
+        .nintendo {
+            width : 3em;
+            height : 3em;
+        }
+        
+        .nintendomario {
+            width : 3em;
+            height : 3em;
+        }
+        .nintendoinstagram {
+            width : 3em;
+            height : 3em;
+        }
+        
+        .nintendotwitter {
+            width : 3em;
+            height : 3em;
+        }
+    }
+
+    .footer {
+        margin-top : 1em;
+        color : grey;
+        font-style :italic;
+    }
+}
+
+nav.menu-event {
+    display : block;
+}
+
+nav {
+    position : fixed;
+    z-index : 999;
+    width : 40%;
+    right : 0;
+    top : 0;
+    background : #20272e;
+    height : 80vh;
+    padding: 1.5em;
+    // border-radius : .3em;
+
+    ul.first-nav {
+        margin-top : 3em;
+    }
+
+    li {
+        a {
+            color : white;
+            text-decoration : none;
+            display : block;
+            padding : .5em;
+            font-size : 1.2em;
+            text-align : left;
+            background-color: red; //#595e63;
+            border-radius : .5em;
+            margin : .8em 0;
+
+            &:hover {
+                font-weight : bold;
+                background-color : white;
+                color : #f8001a;
+            }
+            
+        }
+    }
+
+    ul .getsub a {
+        background-color : white;
+        color : var(--primary-color);
+        font-weight : bold;
+        border : 3px solid var(--primary-color);
+        border-radius : 2em;
+        text-align : center;
+        span {
+            color : red;
+        }
+
+        &:hover {
+            background-color: var(--primary-color);
+            color : white;
+            border-color : white;
+        }
+    }
+        .menu-close {
+        width : 1.8em;
+        float : right;
+        cursor : pointer;
+        background-color : white;//#595e63;
+        border-radius : .3em;
+        padding : .08em;
+
+        &:hover {
+            width : 2em;
+            border : 1px solid white;
+        }
+    }
+
+    .navlogo {
+        width : 5em;
+
+        &:hover {
+            width : 6em;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width : 768px) {
+
+    .menu-open, .menu-close, .navlogolink {
+        display : none;
+    }
+
+    .navbar .container {
+        display : flex;
+        grid-template-columns : 180px auto;
+        justify-content : unset;
+    }
+
+    .navbar nav {
+        display : flex;
+        background: none;
+        justify-content : space-between;
+        position : unset;
+        height: auto;
+        width : 100%;
+        padding : 0;
+
+        ul {
+            display : flex;
+        }
+        
+        a {
+            color : black;
+            font-size : 1.1em;
+            padding : .1em 1em;
+            margin : 0em .05em;
+            background-color : transparent;
+
+            &:hover {
+                background-color : transparent;
+                // color : black;
+            }
+        }
+
+        ul.first-nav {
+            margin : 0;
+            margin-left : 2em;
+        }
+
+        // li.*class* a {
+        //     font-style: italic;
+        // }
+
+        li.getsub a {
+            color : var(--primary-color);
+            border : 3px solid var(--primary-color);
+            border-radius : 3em;
+            font-weight : bold;
+            margin-top : -.1em;
+
+            .sub {
+                color : red;
+            }
+
+            &:hover {
+                color : white;
+                background-color : var(--primary-color);
+            }
+        }
+
+    }
+    // .section3 ul li img {
+    //     width : 400px;
+    //     height :400px;
+    // }
+
+
+/////////////////
+
+.section3 ul {
+    display : flex;
+
+    li {
+        width : 26%;
+        margin-right : auto;
+        padding : 1em;
+
+        img {
+            width : 130px;
+            height : 130px;
+        }
+    }
+}
+
+///////////
+       .section3 {
+        padding-bottom : 3em;
+       }
+
+}
+
+@media only screen and (min-width : 1024px) {
+    .container {
+        width : auto;
+        margin : 0 auto;
+    }
+
+    section {
+        padding : 10em .5em;
+    }
+
+    .section1 .container {
+        display : flex;
+        justify-content : space-between;
+        text-align : left;
+
+        .leftup {
+            margin : 3em 3em 0 6em;
+
+            h1 {
+                font-size : 3em;
+                width : 85%
+            }
+        }
+    }
+
+    .mariocenter {
+        width : 40%;
+        margin-right : 6em;
+        margin-top : -7em;
+    }
+
+    .enjoy {
+        display : flex;
+        font-size : 1.1em;
+    }
+
+    .playnow {
+        margin-right : 1em;
+    }
+
+    ul.facts {
+        display : block;
+        margin-left : 5em;
+
+        li {
+            font-size : 1.4em;
+        }
+    }
+
+    .section2 {
+        position : relative;
+
+        img {
+            display : block;
+            position: absolute;
+            right : 0;
+            width : 350px;
+            bottom : 5em;
+            margin-right : 7em;
+        }
+    }
+
+    .section3 ul {
+        display : flex;
+
+        li {
+            width : 270px;
+            margin-right : auto;
+
+            img {
+                width : 180px;
+                height : 180px;
+            }
+        }
+    }
+
+    .section4 {
+        position: relative;
+
+        .container {
+            display : flex;
+        }
+    }
+
+    .sec4right {
+        position : absolute;
+        right : 0;
+        top : 2;
+        width : 50%;
+        height : 70%;
+    }
+
+    .sec4left {
+        width : 50%;
+        margin-left: 2em;
+    }
+}
+
+@media only screen and (min-width : 1440px) {
+
+    .section2 {
+
+        &:before {
+            content:'';
+            position : absolute;
+            width : 10%;
+            height : 20em;
+            background : var(--primary-color);
+            left: 0;
+            top: -6em;
+        }
+
+        &:after {
+            content : '';
+            position : absolute;
+            width : 125px;
+            height : 152px;
+            background : url('../images/coinchottu.png') no-repeat;
+            left : 4em;
+            top: -2em;
+        }
+    }
+}
